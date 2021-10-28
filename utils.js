@@ -6,10 +6,12 @@ export function findById(items, id) {
     }
 }
 
-export function setUser() {
+export function setUser(userObject) {
     // info from login listener
         // 'submit' button
     // stringify and push to localStorage
+    const loginString = JSON.stringify(userObject)
+    localStorage.setItem('USER', loginString);
         //'user-name'
         //'user-password'
         // to-do items
@@ -18,9 +20,14 @@ export function setUser() {
 
 export function getUser() {
     // GET -- take from local storage
+    const loginString = localStorage.getItem('USER')
+    return JSON.parse(loginString)
     //stringify
     // push to local storage
 }
+
+
+
 
 
 export function renderList()
