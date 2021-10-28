@@ -1,25 +1,41 @@
-# Alchemy Bootstrap Template
+https://miro.com/app/board/o9J_lnW4wbo=/
 
-## Making a plan
+# To Do List
 
-(bolded steps are mandatory, unbolded are for more advanced projects)
+## Login Page
+### HTML
+- [ ] Username input (user-name), password (user-password) input potentially add asterisk to hide password, submit button (submit)
+- [ ] h1 Login
 
-1) **Make a drawing of your app. Simple "wireframes"**
-2) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-3) **For each HTML element ask: Why do I need this?**
-4) Ask which of out HTML elements are hard coded, and which are dynamically generated?
-5) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How"**
-6) Is there some state we need to initialize?
-7) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-8) **Think about how to validate each of your steps**
-9) Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
-10) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
-11) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+### Events
+* upon click, we want the username and password to be set to local storage
+* if statement to check if the password is correct, give error alert to the user that the password is incorrect
+* if password is correct then redirect to the "To Do List" html page
+- [ ] DOM the html IDs of userName, userPassword, and submit
+- [ ] Import getUser, setUser, findById
 
 
-## To Run Cypress Tests
-* `npm install`
-* `npm test`
-* Cypress will open -- you should then click "run <#> integration spec(s)"
-    ![](cypress.png)
-* Make sure all tests pass
+## To Do List
+### HTML
+- [ ] Input radio buttons inside a single div (radio-button), remove button (remove-button), complete task button (complete-button)
+* Event listener on the remove button 
+
+### Events
+* Make each radio button clickable just to select them, and then we can decide which event can be completed or removed
+* On the right section we have a form with an input and an addButton that 
+* When item is completed, update the user status in local stoage
+* For loop to render HTML elements from renderList, and addItem will add to the list 
+* Log out button sends user back to login page
+- [ ] DOM the html IDs of radioButton, removeButton, and completeButton 
+- [ ] Create event listener for completeButton, removeButton, and addButton
+
+
+### Utils 
+* getUser from local storage
+* setUser to local storage
+* renderList renders the to do list 
+* addItem adds new items to the to do list 
+* removeItem removes items from the local storage as well as the HTML list
+* findById will grab unique users by their login ID
+
+* TDD all functions 
