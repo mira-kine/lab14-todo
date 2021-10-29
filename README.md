@@ -4,8 +4,8 @@ https://miro.com/app/board/o9J_lnW4wbo=/
 
 ## Login Page
 ### HTML
-- [ ] Username input (user-name), password (user-password) input potentially add asterisk to hide password, submit button (submit)
-- [ ] h1 Login
+- [x] Username input (user-name), password (user-password) input potentially add asterisk to hide password, submit button (submit)
+- [x] h1 Login
 
 ### Events
 * upon click, we want the username and password to be set to local storage
@@ -17,7 +17,7 @@ https://miro.com/app/board/o9J_lnW4wbo=/
 
 ## To Do List
 ### HTML
-- [ ] Input radio buttons inside a single div (radio-button), remove button (remove-button), complete task button (complete-button)
+- [x] Input radio buttons inside a single div (radio-button), remove button (remove-button), complete task button (complete-button)
 * Event listener on the remove button 
 
 ### Events
@@ -34,7 +34,6 @@ https://miro.com/app/board/o9J_lnW4wbo=/
 * getUser from local storage
 * setUser to local storage
 * renderList renders the to do list 
-* addItem adds new items to the to do list 
 * removeItem removes items from the local storage as well as the HTML list
 * findById will grab unique users by their login ID
 
